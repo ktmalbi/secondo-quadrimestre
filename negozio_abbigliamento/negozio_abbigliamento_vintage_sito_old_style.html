@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Planet - Moda Anni 2000</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Verdana, Arial, sans-serif;
+      background: #d7e8f7;
+      color: #222;
+    }
+
+    .page {
+      width: 980px;
+      margin: 0 auto;
+      background: white;
+      border: 1px solid #7aa6d1;
+      box-shadow: 0 0 12px rgba(0,0,0,0.15);
+    }
+
+    .topbar {
+      background: linear-gradient(#2f6ca3, #184a75);
+      color: white;
+      padding: 10px 20px;
+      font-size: 12px;
+      text-align: right;
+    }
+
+    header {
+      background: linear-gradient(#bfe2ff, #7cb8e8);
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 4px solid #2f6ca3;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 52px;
+      color: #0d3f66;
+      text-shadow: 1px 1px 0 #fff;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    nav {
+      background: #1d5f95;
+      padding: 12px;
+      text-align: center;
+      border-top: 1px solid #8cc4ec;
+      border-bottom: 1px solid #0f3c61;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 16px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .hero {
+      margin: 20px;
+      border: 3px solid #9cc9eb;
+      padding: 10px;
+      background: #eef7ff;
+      text-align: center;
+    }
+
+    .hero img {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+      border: 2px solid #c9e4fa;
+    }
+
+    .hero h2 {
+      font-size: 34px;
+      color: #1d5f95;
+      margin: 20px 0 10px;
+    }
+
+    .layout {
+      display: table;
+      width: 100%;
+      padding: 0 20px 20px;
+      box-sizing: border-box;
+    }
+
+    .sidebar, .content {
+      display: table-cell;
+      vertical-align: top;
+    }
+
+    .sidebar {
+      width: 220px;
+      padding-right: 20px;
+    }
+
+    .box {
+      background: #eef7ff;
+      border: 1px solid #9cc9eb;
+      margin-bottom: 20px;
+      padding: 15px;
+    }
+
+    .box h3 {
+      margin-top: 0;
+      color: #1d5f95;
+      font-size: 18px;
+      border-bottom: 1px solid #b7d8f2;
+      padding-bottom: 8px;
+    }
+
+    .box ul {
+      list-style: square;
+      padding-left: 18px;
+      line-height: 1.8;
+      font-size: 14px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      border: 1px solid #a8cce8;
+      background: #fafcff;
+      padding: 12px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border: 1px solid #d2e7f8;
+    }
+
+    .card h3 {
+      color: #184a75;
+      margin: 12px 0 6px;
+    }
+
+    .price {
+      color: #d83a3a;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 8px 18px;
+      background: linear-gradient(#4fa7e8, #1d78bf);
+      color: white;
+      text-decoration: none;
+      border: 1px solid #12598f;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #184a75;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+    }
+
+    @media (max-width: 1024px) {
+      .page { width: 95%; }
+      .layout, .sidebar, .content {
+        display: block;
+        width: 100%;
+      }
+      .products { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="topbar">Spedizione gratuita sopra 99€ | Assistenza clienti</div>
+
+    <header>
+      <h1>Fashion Planet</h1>
+      <p>Il portale della moda online dal 2003</p>
+    </header>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Nuovi arrivi</a>
+      <a href="#">Donna</a>
+      <a href="#">Uomo</a>
+      <a href="#">Outlet</a>
+      <a href="#">Contatti</a>
+    </nav>
+
+    <section class="hero">
+      <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1800" alt="Hero moda">
+      <h2>Collezione Primavera / Estate</h2>
+      <p>Scopri i trend che hanno segnato un'epoca</p>
+    </section>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="box">
+          <h3>Categorie</h3>
+          <ul>
+            <li>Giacche</li>
+            <li>Abiti</li>
+            <li>Accessori</li>
+            <li>Scarpe</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3>Newsletter</h3>
+          <p>Ricevi offerte e novità.</p>
+          <input type="text" placeholder="La tua email" style="width:100%; padding:8px;">
+        </div>
+      </aside>
+
+      <main class="content">
+        <div class="products">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1200" alt="Giacca">
+            <h3>Giacca Denim</h3>
+            <div class="price">€79</div>
+            <a href="#" class="btn">Acquista</a>
+          </div>
+
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200" alt="Abito">
+            <h3>Abito Casual</h3>
+            <div class="price">€99</div>
+            <a href="#" class="btn">Acquista</a>
+          </div>
+
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=1200" alt="Cappotto">
+            <h3>Cappotto Urban</h3>
+            <div class="price">€129</div>
+            <a href="#" class="btn">Acquista</a>
+          </div>
+
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1200" alt="Look vintage">
+            <h3>Look Vintage</h3>
+            <div class="price">€149</div>
+            <a href="#" class="btn">Acquista</a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer>
+      © 2006 Fashion Planet - Tutti i diritti riservati
+    </footer>
+  </div>
+</body>
+</html>

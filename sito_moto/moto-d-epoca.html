@@ -1,0 +1,1015 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="Moto Club Classica Italiana - Associazione Moto d'Epoca">
+  <meta name="keywords" content="moto epoca, moto classiche, raduno, vintage, moto storiche, club moto, italia">
+  <title>Moto Club Classica Italiana :: Associazione Moto d'Epoca :: Fondata 1987</title>
+  <style>
+    * { margin:0; padding:0; }
+    body {
+      background-color: #1a0a00;
+      background-image:
+        repeating-linear-gradient(45deg, transparent, transparent 2px, rgba(80,40,0,0.15) 2px, rgba(80,40,0,0.15) 4px);
+      font-family: Verdana, Arial, sans-serif;
+      font-size: 12px;
+      color: #ddccaa;
+    }
+
+    /* MARQUEE */
+    .top-marquee {
+      background: #8b0000;
+      color: #ffdd88;
+      font-size: 11px;
+      font-weight: bold;
+      padding: 3px 0;
+      border-bottom: 2px solid #cc6600;
+    }
+    .top-marquee a { color: #ffff88; text-decoration: none; }
+
+    /* HEADER */
+    #header {
+      background: #2b1500;
+      background-image: linear-gradient(to bottom, #3d1f00, #1a0a00);
+      border-bottom: 4px solid #cc6600;
+      padding: 12px 0 8px 0;
+      text-align: center;
+    }
+    #logo-text {
+      font-family: "Impact", "Arial Black", sans-serif;
+      font-size: 38px;
+      color: #ff9900;
+      text-shadow: 3px 3px 0 #660000, 5px 5px 8px #000;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+    #logo-sub {
+      font-family: "Comic Sans MS", Verdana, sans-serif;
+      font-size: 14px;
+      color: #ffcc66;
+      letter-spacing: 2px;
+      margin-top: 4px;
+      text-shadow: 1px 1px 2px #000;
+    }
+    #header-decoration {
+      font-size: 22px;
+      margin: 6px 0 2px 0;
+      color: #cc6600;
+      animation: blink 2s step-start infinite;
+    }
+    #founded {
+      font-size: 10px;
+      color: #886644;
+      letter-spacing: 1px;
+      margin-top: 3px;
+    }
+    @keyframes blink { 50% { opacity: 0.3; } }
+    @keyframes spin  { from { transform:rotate(0deg); } to { transform:rotate(360deg); } }
+    .spin { display:inline-block; animation: spin 3s linear infinite; }
+    .blink { animation: blink 1s step-start infinite; }
+
+    /* FLAMES animation */
+    @keyframes flicker {
+      0%,100% { color:#ff6600; text-shadow:0 0 8px #ff3300; }
+      33%      { color:#ffaa00; text-shadow:0 0 12px #ff6600; }
+      66%      { color:#ff3300; text-shadow:0 0 6px #ffaa00; }
+    }
+    .flame { animation: flicker 0.4s ease-in-out infinite; display:inline-block; }
+
+    /* NAVBAR */
+    #navbar {
+      background: #3d1f00;
+      border-top: 2px solid #885500;
+      border-bottom: 2px solid #885500;
+      text-align: center;
+      padding: 6px 0;
+    }
+    #navbar a {
+      display: inline-block;
+      color: #ffdd99;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 11px;
+      background: #5c2e00;
+      border: 2px outset #aa6622;
+      padding: 4px 12px;
+      margin: 0 2px;
+      font-family: Verdana, sans-serif;
+      text-transform: uppercase;
+    }
+    #navbar a:hover { background:#8b4400; border-style:inset; color:#ffff88; }
+    #navbar a.active { background:#cc6600; color:#ffffff; border-color:#ffaa33; }
+
+    /* LAYOUT */
+    #main-table { width: 780px; margin: 0 auto; }
+
+    /* LEFT SIDEBAR */
+    #sidebar-left { width: 155px; vertical-align: top; padding: 8px 6px 8px 0; }
+    .sbox { background:#2b1000; border:1px solid #775533; margin-bottom:10px; }
+    .sbox-title {
+      background: linear-gradient(to right, #6b3300, #8b4400);
+      color:#ffcc66; font-size:11px; font-weight:bold;
+      padding:4px 6px; border-bottom:1px solid #aa6622;
+      text-transform:uppercase;
+    }
+    .sbox-content { padding:6px; }
+    .sbox-content a {
+      display:block; color:#cc9966; text-decoration:none;
+      font-size:11px; padding:2px 0;
+      border-bottom:1px dotted #553322;
+    }
+    .sbox-content a:before { content:"» "; color:#ff6600; }
+    .sbox-content a:hover  { color:#ffdd88; }
+
+    .counter-box { text-align:center; padding:8px; }
+    .counter-box .count {
+      font-family:"Courier New",monospace; font-size:20px;
+      color:#ff9900; background:#000; padding:3px 8px;
+      border:1px solid #884400; letter-spacing:3px;
+    }
+    .counter-label { font-size:9px; color:#775533; margin-top:3px; }
+
+    /* CONTENT */
+    #content { vertical-align:top; padding:8px; }
+
+    .news-ticker {
+      background:#1a0800; border:1px solid #663300;
+      border-left:4px solid #cc6600; padding:5px 8px;
+      margin-bottom:10px; font-size:11px; color:#cc9966;
+      white-space:nowrap; overflow:hidden;
+    }
+    .news-ticker b { color:#ff6600; }
+
+    .welcome-box { background:#1f0d00; border:2px solid #775533; margin-bottom:12px; }
+    .welcome-title {
+      background: linear-gradient(to right, #5c2e00, #3d1f00, #5c2e00);
+      color:#ffcc00; font-size:14px; font-weight:bold;
+      font-family:"Impact",sans-serif;
+      padding:7px 10px; border-bottom:2px solid #cc6600;
+      text-align:center; letter-spacing:2px;
+      text-shadow:2px 2px 3px #000;
+    }
+    .welcome-content {
+      padding:10px; line-height:1.7; font-size:12px; color:#ccbbaa;
+    }
+    .welcome-content b { color:#ffaa44; }
+
+    .section-title {
+      background: linear-gradient(to right, #8b4400, #5c2e00);
+      color:#ffdd88; font-size:13px; font-weight:bold;
+      font-family:"Impact",sans-serif;
+      padding:5px 10px; border-left:5px solid #ff6600;
+      margin-bottom:8px; margin-top:14px;
+      letter-spacing:1px; text-shadow:1px 1px 1px #000;
+    }
+
+    /* TABLES */
+    .data-table { width:100%; border-collapse:collapse; margin-bottom:12px; }
+    .data-table th {
+      background:#5c2e00; color:#ffcc66; font-size:11px;
+      padding:5px; border:1px solid #774422; text-align:left;
+    }
+    .data-table td {
+      padding:5px 7px; font-size:11px; border:1px solid #3d2010;
+      vertical-align:top; color:#ccbbaa;
+    }
+    .data-table tr:nth-child(even) td { background:#1f0d00; }
+    .data-table tr:nth-child(odd)  td { background:#2b1500; }
+    .data-table tr:hover td { background:#3d1f00; color:#ffdd88; }
+
+    /* NEWS */
+    .news-item {
+      background:#1f0d00; border-left:3px solid #cc6600;
+      border-bottom:1px dotted #442200; padding:6px 8px; margin-bottom:6px;
+    }
+    .news-item .news-date  { color:#ff6600; font-size:10px; font-weight:bold; }
+    .news-item .news-title { color:#ffaa44; font-weight:bold; font-size:12px; }
+    .news-item .news-text  { color:#aa9977; font-size:11px; margin-top:2px; }
+
+    /* CONTACT FORM */
+    .contact-form { background:#1f0d00; border:1px solid #664422; padding:10px; margin-bottom:12px; }
+    .contact-form label { display:block; color:#cc9966; font-size:11px; margin-bottom:2px; margin-top:6px; }
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form select {
+      width:280px; background:#0d0500; border:1px inset #664422;
+      color:#ff9900; font-family:"Courier New",monospace;
+      font-size:12px; padding:3px;
+    }
+    .contact-form textarea { height:80px; width:340px; }
+    .form-btn {
+      background:#5c2e00; border:2px outset #aa6622;
+      color:#ffdd88; font-weight:bold; font-size:12px;
+      padding:4px 20px; margin-top:8px; cursor:pointer; font-family:Verdana;
+    }
+    .form-btn:hover { background:#8b4400; border-style:inset; color:#ffff88; }
+
+    /* RIGHT SIDEBAR */
+    #sidebar-right { width:125px; vertical-align:top; padding:8px 0 8px 6px; }
+
+    .banner-ad {
+      background:#150800; border:2px solid #664422;
+      text-align:center; padding:8px 4px; margin-bottom:8px; font-size:10px;
+    }
+    .banner-ad .ad-title { color:#ffcc00; font-size:11px; font-weight:bold; font-family:"Impact"; letter-spacing:1px; }
+    .banner-ad .ad-text  { color:#cc9966; font-size:10px; }
+    .banner-ad .ad-price { color:#ff9900; font-size:13px; font-weight:bold; }
+    .banner-ad .ad-cta {
+      display:inline-block; background:#8b4400; color:#ffdd88;
+      font-weight:bold; font-size:10px; padding:2px 8px;
+      margin-top:5px; text-decoration:none; border:1px outset #cc6600;
+    }
+
+    .online-now {
+      background:#0d0500; border:1px solid #663300;
+      padding:6px; text-align:center; margin-bottom:8px;
+    }
+    .online-dot   { color:#ff6600; font-size:16px; }
+    .online-count { color:#ff9900; font-size:14px; font-weight:bold; font-family:"Courier New"; }
+    .online-label { color:#664422; font-size:9px; }
+
+    /* FOOTER */
+    #footer {
+      background:#0d0500; border-top:3px solid #663300;
+      text-align:center; padding:10px; font-size:10px;
+      color:#664422; margin-top:10px;
+    }
+    #footer a { color:#885533; text-decoration:none; }
+    #footer a:hover { text-decoration:underline; color:#ffaa44; }
+    .best-viewed { color:#442200; font-size:9px; margin-top:6px; }
+
+    hr.rust { border:none; border-top:1px solid #442200; border-bottom:1px solid #663300; margin:8px 0; }
+
+    .new-badge {
+      display:inline-block; background:#8b0000; color:#ffdd00;
+      font-size:9px; font-weight:bold; padding:1px 5px;
+      border:1px solid #cc4444; animation:blink 1.2s step-start infinite;
+      font-family:"Courier New";
+    }
+    .updated-badge {
+      display:inline-block; background:#4a3300; color:#ffaa00;
+      font-size:9px; padding:1px 4px; border:1px solid #886600;
+    }
+
+    p { margin:4px 0 8px 0; line-height:1.6; }
+    a { color:#cc7733; } a:visited { color:#996633; } a:hover { color:#ffdd88; text-decoration:underline; }
+    ul { margin:4px 0 8px 16px; line-height:1.8; }
+    ul li { color:#bbaa88; font-size:11px; }
+    ul li:before { content:"* "; color:#cc6600; }
+
+    /* TABS */
+    .tab-nav a {
+      display:inline-block; background:#1f0d00; border:1px solid #664422;
+      border-bottom:none; color:#cc9966; font-size:11px;
+      padding:3px 10px; text-decoration:none; margin-right:2px;
+    }
+    .tab-nav a.tab-active {
+      background:#2b1500; color:#ffcc00; border-color:#cc6600;
+      font-weight:bold;
+    }
+    .tab-content {
+      border:1px solid #664422; background:#2b1500;
+      padding:8px; font-size:11px; color:#ccbbaa; line-height:1.6;
+    }
+    .tab-panel { display:none; }
+    .tab-panel.tab-active { display:block; }
+
+    .page-section { display:none; }
+    .page-section.active { display:block; }
+
+    /* MOTO CARD */
+    .moto-card {
+      background:#1f0d00; border:2px outset #664422;
+      padding:8px; text-align:center; vertical-align:top;
+    }
+    .moto-icon { font-size:38px; margin-bottom:4px; }
+    .moto-name { color:#ffaa44; font-weight:bold; font-size:12px; font-family:"Impact"; letter-spacing:1px; }
+    .moto-year { color:#886644; font-size:10px; }
+    .moto-desc { color:#aa9977; font-size:10px; margin-top:3px; line-height:1.5; }
+
+    /* MEMBER CARD */
+    .member-card {
+      background:#1f0d00; border:2px outset #664422;
+      padding:8px; text-align:center; vertical-align:top; width:110px;
+    }
+    .member-avatar {
+      width:55px; height:55px; background:#3d1f00; border:2px solid #885533;
+      border-radius:50%; display:flex; align-items:center;
+      justify-content:center; font-size:26px; margin:0 auto 5px;
+    }
+    .member-name  { color:#ffcc66; font-weight:bold; font-size:11px; }
+    .member-role  { color:#886644; font-size:10px; font-style:italic; }
+    .member-moto  { color:#cc7733; font-size:10px; }
+
+    .hit-counter {
+      font-family:"Courier New",monospace; font-size:13px;
+      background:#000; color:#ff9900; border:1px solid #664400;
+      padding:1px 6px; letter-spacing:2px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- MARQUEE -->
+<div class="top-marquee">
+  <marquee scrollamount="3">
+    &nbsp;&nbsp;&nbsp;🏍 BENVENUTI nel sito ufficiale del MOTO CLUB CLASSICA ITALIANA 🏍 &nbsp;&nbsp;|&nbsp;&nbsp; Prossimo raduno: 14 Aprile 2006 – Brescia &nbsp;&nbsp;|&nbsp;&nbsp; 🔥 ISCRIVITI AL CLUB – quota annuale soli €35! 🔥 &nbsp;&nbsp;|&nbsp;&nbsp; Nuovi arrivi in garage: Guzzi V7 Sport 1972 e Laverda 750 SFC &nbsp;&nbsp;|&nbsp;&nbsp; 🏆 Vincitori Concorso d'Eleganza 2005: <a href="#">vedi foto!</a> &nbsp;&nbsp;|&nbsp;&nbsp; Info: segreteria@motoclubclassica.it
+  </marquee>
+</div>
+
+<!-- HEADER -->
+<div id="header">
+  <div id="header-decoration">
+    <span class="flame">🔥</span>
+    <span class="spin">⚙</span>
+    &nbsp;🏍 🏍 🏍&nbsp;
+    <span class="spin">⚙</span>
+    <span class="flame">🔥</span>
+  </div>
+  <div id="logo-text">Moto Club Classica Italiana</div>
+  <div id="logo-sub">:: Associazione Moto d'Epoca dal 1987 ::</div>
+  <div id="founded">
+    <span class="blink">★</span>
+    Sede: Brescia | Affiliati FMI &amp; ASI | P.IVA 01234567890
+    <span class="blink">★</span>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<div id="navbar">
+  <a href="#" class="active" onclick="showPage('home',this);return false;">🏠 Home</a>
+  <a href="#" onclick="showPage('chisiamo',this);return false;">🤝 Chi Siamo</a>
+  <a href="#" onclick="showPage('moto',this);return false;">🏍 Le Nostre Moto</a>
+  <a href="#" onclick="showPage('raduni',this);return false;">📅 Raduni</a>
+  <a href="#" onclick="showPage('galleria',this);return false;">📷 Galleria</a>
+  <a href="#" onclick="showPage('news',this);return false;">📰 News</a>
+  <a href="#" onclick="showPage('contatti',this);return false;">✉ Contatti</a>
+</div>
+
+<!-- MAIN TABLE -->
+<table id="main-table" cellpadding="0" cellspacing="0"><tr>
+
+<!-- LEFT SIDEBAR -->
+<td id="sidebar-left">
+
+  <div class="sbox">
+    <div class="sbox-title">⚡ Navigazione</div>
+    <div class="sbox-content">
+      <a href="#" onclick="showPage('home',null);return false;">Home Page</a>
+      <a href="#" onclick="showPage('chisiamo',null);return false;">Il Club</a>
+      <a href="#" onclick="showPage('moto',null);return false;">Le Nostre Moto</a>
+      <a href="#" onclick="showPage('raduni',null);return false;">Calendario Raduni</a>
+      <a href="#" onclick="showPage('galleria',null);return false;">Foto Gallery</a>
+      <a href="#" onclick="showPage('news',null);return false;">News &amp; Comunicati</a>
+      <a href="#" onclick="showPage('contatti',null);return false;">Contattaci</a>
+      <a href="#">Libro degli Ospiti</a>
+      <a href="#">Forum Discussioni</a>
+      <a href="#">Area Soci</a>
+    </div>
+  </div>
+
+  <div class="sbox">
+    <div class="sbox-title">📅 Prossimo Raduno</div>
+    <div class="sbox-content">
+      <div style="text-align:center; padding:4px 0;">
+        <div style="font-size:28px;">🏍</div>
+        <div style="color:#ff9900; font-size:13px; font-weight:bold; font-family:Impact;">14 APRILE</div>
+        <div style="color:#ffcc66; font-size:11px; font-weight:bold;">Gran Raduno Bresciano</div>
+        <div style="color:#886644; font-size:10px; margin-top:3px;">Piazza della Loggia<br>Brescia</div>
+        <div style="font-size:10px; color:#cc7733; margin-top:5px; animation:blink 1s step-start infinite;">[ ISCRIVITI → ]</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sbox">
+    <div class="sbox-title">👁 Visitatori</div>
+    <div class="sbox-content">
+      <div class="counter-box">
+        <div class="count">031247</div>
+        <div class="counter-label">visite totali</div>
+        <hr class="rust">
+        <div style="font-size:10px; color:#886644;">Oggi: <b style="color:#ff9900">89</b></div>
+        <div style="font-size:10px; color:#886644;">Ieri: <b style="color:#ff9900">142</b></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sbox">
+    <div class="sbox-title">🕐 Segreteria</div>
+    <div class="sbox-content">
+      <div style="font-size:10px; line-height:1.9; color:#aa9977; padding:2px 0;">
+        <b style="color:#ffcc66">Mar – Ven</b><br>
+        18:00 – 20:00<br>
+        <hr class="rust">
+        <b style="color:#ffcc66">Sabato</b><br>
+        10:00 – 13:00<br>
+        <hr class="rust">
+        <b style="color:#cc4444">Lun / Dom</b><br>
+        <span style="color:#884444">CHIUSO</span><br>
+        <hr class="rust">
+        <span style="color:#cc7733; font-size:9px;">📞 030-9876543</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="sbox">
+    <div class="sbox-title">🔗 Link Amici</div>
+    <div class="sbox-content">
+      <a href="#">FMI – Fed. Motociclistica</a>
+      <a href="#">ASI – Auto Storiche</a>
+      <a href="#">Moto Guzzi Club IT</a>
+      <a href="#">Ducati Classic Club</a>
+      <a href="#">Laverda Register</a>
+      <a href="#">MotoStoriche.it</a>
+      <a href="#">Gilera Club Italia</a>
+      <a href="#">eBay Motors Italia</a>
+    </div>
+  </div>
+
+</td>
+
+<!-- CONTENT -->
+<td id="content">
+
+  <div class="news-ticker">
+    <b>🔥 NEWS:</b>&nbsp;
+    Nuovo membro: Benvenuto Mario con la sua Ducati 250 Desmo del 1969! &nbsp;|&nbsp;
+    Ricambi cercansi: cambio completo Morini 3½ – contattare segreteria &nbsp;|&nbsp;
+    Concorso d'eleganza: aperte le iscrizioni per Giugno 2006! &nbsp;|&nbsp;
+    In vendita: Benelli 250 2C del 1971, ottimo stato, prezzo trattabile
+  </div>
+
+  <!-- ====== HOME ====== -->
+  <div id="page-home" class="page-section active">
+
+    <div class="welcome-box">
+      <div class="welcome-title">🏍 BENVENUTI NEL MOTO CLUB CLASSICA ITALIANA! 🏍</div>
+      <div class="welcome-content">
+        <p>
+          Il <b>Moto Club Classica Italiana</b> è un'associazione no-profit con sede a Brescia, fondata nel <b>1987</b> da un gruppo di appassionati con un'unica passione: le <b>moto d'epoca italiane</b>. In quasi vent'anni di attività siamo cresciuti fino a contare oltre <b>180 soci</b> da tutta la Lombardia e non solo.
+        </p>
+        <p>
+          Il nostro scopo è <b>preservare, restaurare e far rivivere</b> i capolavori a due ruote del made in Italy: dalle Guzzi alle Ducati, dalle Laverda alle MV Agusta, dai Gilera alle Morini. Ogni moto d'epoca è un pezzo di storia che merita di essere conservato e raccontato.
+        </p>
+        <p>
+          Organizziamo <b>raduni, concorsi d'eleganza, gite sociali</b> e serate tecniche durante tutto l'anno. Siamo affiliati alla <b>Federazione Motociclistica Italiana (FMI)</b> e all'<b>ASI – Automotoclub Storico Italiano</b>.
+        </p>
+        <p style="color:#ffaa44; font-size:11px;">
+          ℹ Questo sito è ottimizzato per Internet Explorer 6 con risoluzione 800x600. Per la galleria foto è richiesto <b>Adobe Flash Player</b>.
+        </p>
+      </div>
+    </div>
+
+    <div class="section-title">🆕 Ultime Notizie <span class="new-badge">NEW!</span></div>
+
+    <div class="news-item">
+      <div class="news-date">20 Marzo 2006</div>
+      <div class="news-title">Gran Raduno Bresciano – Iscrizioni aperte! <span class="new-badge">NEW</span></div>
+      <div class="news-text">Il 14 aprile torniamo in Piazza della Loggia per il nostro raduno primaverile. Attesi oltre 200 partecipanti da tutta Italia. Pranzo sociale incluso nell'iscrizione (€15). Ultimi posti disponibili!</div>
+    </div>
+    <div class="news-item">
+      <div class="news-date">10 Marzo 2006</div>
+      <div class="news-title">Arrivata in garage: Laverda 750 SFC 1973 <span class="updated-badge">UPD</span></div>
+      <div class="news-text">Il socio Emilio Rota ha donato al club la sua splendida Laverda 750 SFC del 1973 per il progetto di restauro collettivo. I lavori inizieranno il prossimo sabato. Chi vuole partecipare contatti la segreteria.</div>
+    </div>
+    <div class="news-item">
+      <div class="news-date">28 Febbraio 2006</div>
+      <div class="news-title">Vincitori Concorso d'Eleganza Invernale 2006</div>
+      <div class="news-text">Grande successo per il nostro concorso invernale! 1° posto: Roberto Fiori con MV Agusta 750 S America. 2° posto: Carla Mori con Ducati 250 Desmo. Complimenti a tutti i partecipanti!</div>
+    </div>
+
+    <div class="section-title">⭐ Perché Iscriversi</div>
+    <table width="100%" cellspacing="5">
+      <tr>
+        <td width="32%" valign="top">
+          <table width="100%" style="background:#1f0d00;border:1px solid #664422;">
+            <tr><td style="background:#3d1f00;padding:6px;text-align:center;font-size:20px;">🔧</td></tr>
+            <tr><td style="padding:6px;font-size:11px;color:#aa9977;">
+              <b style="color:#ffaa44">Officina Condivisa</b><br>
+              Accesso al garage attrezzato del club ogni sabato mattina con i nostri meccanici esperti.
+            </td></tr>
+          </table>
+        </td>
+        <td width="32%" valign="top">
+          <table width="100%" style="background:#1f0d00;border:1px solid #664422;">
+            <tr><td style="background:#3d1f00;padding:6px;text-align:center;font-size:20px;">📜</td></tr>
+            <tr><td style="padding:6px;font-size:11px;color:#aa9977;">
+              <b style="color:#ffaa44">Certificazione ASI</b><br>
+              Assistenza completa per ottenere il certificato di storicità e la targa ASI per la tua moto.
+            </td></tr>
+          </table>
+        </td>
+        <td width="32%" valign="top">
+          <table width="100%" style="background:#1f0d00;border:1px solid #664422;">
+            <tr><td style="background:#3d1f00;padding:6px;text-align:center;font-size:20px;">🤝</td></tr>
+            <tr><td style="padding:6px;font-size:11px;color:#aa9977;">
+              <b style="color:#ffaa44">Comunità</b><br>
+              Entra in una rete di 180 appassionati: scambia consigli, ricambi, esperienze.
+            </td></tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+  </div>
+
+  <!-- ====== CHI SIAMO ====== -->
+  <div id="page-chisiamo" class="page-section">
+
+    <div class="welcome-box">
+      <div class="welcome-title">🤝 Chi Siamo – La Storia del Club</div>
+      <div class="welcome-content">
+        <p>
+          Tutto cominciò nel <b>1987</b> quando sette amici bresciani si ritrovarono nel garage di <b>Luigi Castelletti</b> attorno a una Moto Guzzi Falcone del 1955 che aveva bisogno di essere riportata in vita. Da quella serata nacque il <b>Moto Club Classica Italiana</b>.
+        </p>
+        <p>
+          Negli anni Novanta il club crebbe rapidamente. Nel <b>1993</b> ottenemmo l'affiliazione alla FMI e nel <b>1996</b> all'ASI, diventando punto di riferimento in Lombardia per il <b>certificato di storicità</b> dei veicoli d'epoca. Nel <b>2001</b> abbiamo inaugurato la nostra sede fissa con garage attrezzato in Via Triumplina 88, Brescia.
+        </p>
+        <p>
+          Oggi contiamo <b>183 soci attivi</b>, organizziamo mediamente <b>8 eventi l'anno</b> e gestiamo una collezione condivisa di oltre <b>25 moto d'epoca</b>, alcune delle quali in continuo restauro.
+        </p>
+      </div>
+    </div>
+
+    <div class="section-title">👥 Il Consiglio Direttivo</div>
+    <table cellspacing="8"><tr>
+      <td class="member-card">
+        <div class="member-avatar">👨</div>
+        <div class="member-name">Luigi Castelletti</div>
+        <div class="member-role">Presidente Fondatore</div>
+        <hr class="rust">
+        <div class="member-moto">Guzzi Falcone '55</div>
+      </td>
+      <td class="member-card">
+        <div class="member-avatar">👩</div>
+        <div class="member-name">Rosanna Ferri</div>
+        <div class="member-role">Vice Presidente</div>
+        <hr class="rust">
+        <div class="member-moto">Ducati 350 GT '68</div>
+      </td>
+      <td class="member-card">
+        <div class="member-avatar">🧔</div>
+        <div class="member-name">Emilio Rota</div>
+        <div class="member-role">Tesoriere</div>
+        <hr class="rust">
+        <div class="member-moto">Laverda 750 SFC '73</div>
+      </td>
+      <td class="member-card">
+        <div class="member-avatar">👨‍🔧</div>
+        <div class="member-name">Piero Cattaneo</div>
+        <div class="member-role">Resp. Officina</div>
+        <hr class="rust">
+        <div class="member-moto">MV Agusta 350 '72</div>
+      </td>
+      <td class="member-card">
+        <div class="member-avatar">👩‍💻</div>
+        <div class="member-name">Cristina Volpi</div>
+        <div class="member-role">Segretaria</div>
+        <hr class="rust">
+        <div class="member-moto">Gilera 150 Sport '64</div>
+      </td>
+    </tr></table>
+
+    <div class="section-title">📋 Quote Associative 2006</div>
+    <table class="data-table">
+      <tr><th>Tipo Iscrizione</th><th>Quota Annuale</th><th>Cosa Include</th></tr>
+      <tr><td><b style="color:#ffaa44">Socio Ordinario</b></td><td style="color:#ff9900;font-weight:bold;">€ 35</td><td>Tessera FMI, accesso raduni, garage sabato, notiziario mensile</td></tr>
+      <tr><td><b style="color:#ffaa44">Socio Familiare</b></td><td style="color:#ff9900;font-weight:bold;">€ 20</td><td>Familiare convivente di socio ordinario, tessera + accesso eventi</td></tr>
+      <tr><td><b style="color:#ffaa44">Socio Sostenitore</b></td><td style="color:#ff9900;font-weight:bold;">€ 80</td><td>Tutto il precedente + logo su sito + priorità iscrizione eventi</td></tr>
+      <tr><td><b style="color:#ffaa44">Socio Onorario</b></td><td style="color:#ff9900;font-weight:bold;">Gratuita</td><td>Assegnata dal Consiglio a persone di particolare merito</td></tr>
+    </table>
+
+    <div class="section-title">🏆 Affiliazioni e Riconoscimenti</div>
+    <table width="100%" cellspacing="6"><tr>
+      <td style="background:#1f0d00;border:2px outset #664422;padding:8px;text-align:center;width:30%;">
+        <div style="font-size:24px;">🏅</div>
+        <div style="color:#ffcc00;font-weight:bold;font-size:11px;">FMI</div>
+        <div style="color:#664422;font-size:10px;">Fed. Motociclistica Italiana<br>dal 1993</div>
+      </td>
+      <td style="background:#1f0d00;border:2px outset #664422;padding:8px;text-align:center;width:30%;">
+        <div style="font-size:24px;">📜</div>
+        <div style="color:#ffcc00;font-weight:bold;font-size:11px;">ASI</div>
+        <div style="color:#664422;font-size:10px;">Automotoclub Storico Italiano<br>dal 1996</div>
+      </td>
+      <td style="background:#1f0d00;border:2px outset #664422;padding:8px;text-align:center;width:30%;">
+        <div style="font-size:24px;">🌟</div>
+        <div style="color:#ffcc00;font-weight:bold;font-size:11px;">Club dell'Anno</div>
+        <div style="color:#664422;font-size:10px;">Premio FMI Lombardia<br>2003 e 2005</div>
+      </td>
+    </tr></table>
+
+  </div>
+
+  <!-- ====== LE NOSTRE MOTO ====== -->
+  <div id="page-moto" class="page-section">
+
+    <div class="welcome-box">
+      <div class="welcome-title">🏍 Le Nostre Moto – La Collezione del Club</div>
+      <div class="welcome-content">
+        <p>Il club gestisce una collezione condivisa di moto d'epoca italiane. Alcune sono esposte in sede, altre sono in fase di restauro. Tutte possono essere ammirate durante i raduni e le giornate porte aperte.</p>
+      </div>
+    </div>
+
+    <table width="100%" cellspacing="8">
+      <tr>
+        <td class="moto-card" width="30%">
+          <div class="moto-icon">🏍</div>
+          <div class="moto-name">Moto Guzzi Falcone</div>
+          <div class="moto-year">Anno: 1955 – 500cc</div>
+          <hr class="rust">
+          <div class="moto-desc">La moto fondatrice del club. Restaurata da zero nel 1987 dai soci fondatori. Motore monocilindrico orizzontale, 500cc. Condizioni: eccellenti.</div>
+          <div style="color:#ff6600;font-size:10px;margin-top:4px;">★★★★★ Gioiello del Club</div>
+        </td>
+        <td class="moto-card" width="30%">
+          <div class="moto-icon">🏍</div>
+          <div class="moto-name">MV Agusta 750 S America</div>
+          <div class="moto-year">Anno: 1975 – 750cc</div>
+          <hr class="rust">
+          <div class="moto-desc">4 cilindri in linea, 750cc, doppio albero a camme. Una delle moto più belle mai prodotte. Proprietà del socio Roberto Fiori, vincitrice del concorso 2006.</div>
+          <div style="color:#ff6600;font-size:10px;margin-top:4px;">★★★★★ Pezzo da Museo</div>
+        </td>
+        <td class="moto-card" width="30%">
+          <div class="moto-icon">🏍</div>
+          <div class="moto-name">Ducati 250 Desmo</div>
+          <div class="moto-year">Anno: 1969 – 250cc</div>
+          <hr class="rust">
+          <div class="moto-desc">Il mitico distribuzione desmodromica Ducati. Monocilindrico 250cc SOHC. Proprietà della socia Carla Mori. Restauro completato nel 2004.</div>
+          <div style="color:#ff6600;font-size:10px;margin-top:4px;">★★★★☆ Ottimo Stato</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="moto-card">
+          <div class="moto-icon">🏍</div>
+          <div class="moto-name">Laverda 750 SFC</div>
+          <div class="moto-year">Anno: 1973 – 750cc</div>
+          <hr class="rust">
+          <div class="moto-desc">La moto da corsa stradale per eccellenza degli anni '70. Bicilindrico parallelo 750cc. IN RESTAURO – Donata dal socio Emilio Rota nel 2006.</div>
+          <div style="color:#cc4400;font-size:10px;margin-top:4px;animation:blink 1s step-start infinite;">🔧 IN RESTAURO</div>
+        </td>
+        <td class="moto-card">
+          <div class="moto-icon">🏍</div>
+          <div class="moto-name">Gilera 150 Sport</div>
+          <div class="moto-year">Anno: 1964 – 150cc</div>
+          <hr class="rust">
+          <div class="moto-desc">Monocilindrico 150cc, telaio in acciaio, forcella telescopica. Una delle ultime Gilera prima dell'acquisizione Piaggio. Condizioni: buone.</div>
+          <div style="color:#ff6600;font-size:10px;margin-top:4px;">★★★★☆ Buono Stato</div>
+        </td>
+        <td class="moto-card">
+          <div class="moto-icon">🏍</div>
+          <div class="moto-name">Morini 3½ Sport</div>
+          <div class="moto-year">Anno: 1976 – 344cc</div>
+          <hr class="rust">
+          <div class="moto-desc">Il famoso V-twin bolognese 344cc a 72°. Considerato uno dei motori più belli di sempre. CERCASI ricambi cambio completo – contattare segreteria.</div>
+          <div style="color:#886644;font-size:10px;margin-top:4px;">★★★☆☆ In lavorazione</div>
+        </td>
+      </tr>
+    </table>
+
+    <div class="section-title">🔧 Progetto Restauro Collettivo 2006</div>
+    <div style="background:#1f0d00;border:1px solid #664422;padding:10px;font-size:11px;color:#aa9977;line-height:1.7;">
+      <b style="color:#ffaa44;">Laverda 750 SFC 1973 – Restauro partecipato</b><br><br>
+      Ogni sabato mattina dalle 9:00 alle 13:00, i soci possono partecipare al restauro della Laverda 750 SFC donata da Emilio Rota. Il progetto è coordinato da Piero Cattaneo. Si cercano volontari con esperienza in:<br><br>
+      <ul>
+        <li>Carrozzeria e verniciatura (colore originale: arancio Laverda)</li>
+        <li>Revisione motore bicilindrico parallelo</li>
+        <li>Impianto elettrico 12V</li>
+        <li>Reperimento ricambi originali anni '70</li>
+      </ul>
+      <br>
+      <span style="color:#cc7733;">Per iscriversi al gruppo di lavoro: segreteria@motoclubclassica.it</span>
+    </div>
+
+  </div>
+
+  <!-- ====== RADUNI ====== -->
+  <div id="page-raduni" class="page-section">
+
+    <div class="welcome-box">
+      <div class="welcome-title">📅 Calendario Raduni e Eventi 2006</div>
+      <div class="welcome-content"><p>Tutti gli eventi sono aperti ai soci e, salvo diversa indicazione, anche agli esterni appassionati di moto d'epoca.</p></div>
+    </div>
+
+    <table class="data-table">
+      <tr>
+        <th>Data</th><th>Evento</th><th>Luogo</th><th>Note</th><th>Iscrizione</th>
+      </tr>
+      <tr>
+        <td style="color:#ff9900;font-weight:bold;white-space:nowrap;">14 Apr 2006</td>
+        <td><b style="color:#ffaa44;">Gran Raduno Bresciano</b> <span class="new-badge">HOT</span></td>
+        <td>Piazza della Loggia, Brescia</td>
+        <td>Pranzo sociale incluso, concorso eleganza, mercatino ricambi</td>
+        <td style="color:#00cc66;font-weight:bold;">APERTA</td>
+      </tr>
+      <tr>
+        <td style="color:#ff9900;font-weight:bold;white-space:nowrap;">28 Mag 2006</td>
+        <td><b style="color:#ffaa44;">Gita sui Laghi</b></td>
+        <td>Lago di Garda – Gargnano</td>
+        <td>Gita sociale, percorso 180km, sosta pranzo a Gargnano</td>
+        <td style="color:#ffcc00;">PRESTO</td>
+      </tr>
+      <tr>
+        <td style="color:#ff9900;font-weight:bold;white-space:nowrap;">10 Giu 2006</td>
+        <td><b style="color:#ffaa44;">Concorso d'Eleganza Estivo</b></td>
+        <td>Villa Fenaroli, Rezzato (BS)</td>
+        <td>Concorso con premiazione, musica live, esposizione aperta al pubblico</td>
+        <td style="color:#ffcc00;">PRESTO</td>
+      </tr>
+      <tr>
+        <td style="color:#ff9900;font-weight:bold;white-space:nowrap;">16 Set 2006</td>
+        <td><b style="color:#ffaa44;">Raduno d'Autunno</b></td>
+        <td>Franciacorta – Erbusco (BS)</td>
+        <td>Percorso tra le vigne, visita cantina, degustazione vini</td>
+        <td style="color:#886644;">N/A</td>
+      </tr>
+      <tr>
+        <td style="color:#ff9900;font-weight:bold;white-space:nowrap;">11 Nov 2006</td>
+        <td><b style="color:#ffaa44;">San Martino – Raduno di Chiusura</b></td>
+        <td>Centro storico, Brescia</td>
+        <td>Tradizionale raduno di fine stagione, brindisi sociale, premiazioni anno</td>
+        <td style="color:#886644;">N/A</td>
+      </tr>
+      <tr>
+        <td style="color:#ff9900;font-weight:bold;white-space:nowrap;">Ogni Sab.</td>
+        <td><b style="color:#ffaa44;">Officina Aperta</b></td>
+        <td>Sede club, Via Triumplina 88</td>
+        <td>Restauro collettivo Laverda, assistenza soci, chiacchiere tra appassionati</td>
+        <td style="color:#00cc66;">LIBERO</td>
+      </tr>
+    </table>
+
+    <div style="background:#1f0d00;border-left:3px solid #cc6600;padding:8px;font-size:11px;color:#aa9977;margin-top:8px;">
+      ℹ <b style="color:#ffaa44">Come iscriversi agli eventi:</b> inviare una email a <a href="#">eventi@motoclubclassica.it</a> con nome, cognome, numero tessera (se socio) e moto con cui si partecipa. La conferma arriverà entro 3 giorni.
+    </div>
+
+  </div>
+
+  <!-- ====== GALLERIA ====== -->
+  <div id="page-galleria" class="page-section">
+
+    <div class="welcome-box">
+      <div class="welcome-title">📷 Galleria Fotografica</div>
+      <div class="welcome-content"><p>Le foto dei nostri eventi. Per visualizzare la galleria completa è necessario <b>Adobe Flash Player 7.0</b> o superiore.</p></div>
+    </div>
+
+    <div class="tab-nav">
+      <a href="#" class="tab-active" onclick="showTab2('raduno2006',this);return false;">Raduno Primavera '06</a>
+      <a href="#" onclick="showTab2('concorso2006',this);return false;">Concorso Eleganza '06</a>
+      <a href="#" onclick="showTab2('officina',this);return false;">Officina</a>
+      <a href="#" onclick="showTab2('archivio',this);return false;">Archivio Storico</a>
+    </div>
+
+    <div class="tab-content">
+      <div id="tab-raduno2006" class="tab-panel tab-active">
+        <table width="100%" cellspacing="6"><tr>
+          <td style="background:#1f0d00;border:1px solid #664422;padding:8px;text-align:center;width:30%;">
+            <div style="font-size:50px;padding:10px;">🏍</div>
+            <div style="font-size:10px;color:#886644;">Partenza da Piazza della Loggia</div>
+          </td>
+          <td style="background:#1f0d00;border:1px solid #664422;padding:8px;text-align:center;width:30%;">
+            <div style="font-size:50px;padding:10px;">🔥</div>
+            <div style="font-size:10px;color:#886644;">Sfilata in centro Brescia</div>
+          </td>
+          <td style="background:#1f0d00;border:1px solid #664422;padding:8px;text-align:center;width:30%;">
+            <div style="font-size:50px;padding:10px;">🏆</div>
+            <div style="font-size:10px;color:#886644;">Premiazione concorso</div>
+          </td>
+        </tr><tr>
+          <td style="background:#1f0d00;border:1px solid #664422;padding:8px;text-align:center;">
+            <div style="font-size:50px;padding:10px;">🤝</div>
+            <div style="font-size:10px;color:#886644;">Il gruppo dei partecipanti</div>
+          </td>
+          <td style="background:#1f0d00;border:1px solid #664422;padding:8px;text-align:center;">
+            <div style="font-size:50px;padding:10px;">🍷</div>
+            <div style="font-size:10px;color:#886644;">Pranzo sociale</div>
+          </td>
+          <td style="background:#1f0d00;border:1px solid #664422;padding:8px;text-align:center;">
+            <div style="font-size:50px;padding:10px;">⚙</div>
+            <div style="font-size:10px;color:#886644;">Dettaglio motore Guzzi Falcone</div>
+          </td>
+        </tr></table>
+        <div style="font-size:10px;color:#664422;text-align:right;margin-top:4px;">Foto: Cristina Volpi | 73 foto totali | <a href="#">[ SCARICA TUTTE IN ZIP – 18MB ]</a></div>
+      </div>
+      <div id="tab-concorso2006" class="tab-panel">
+        <p style="color:#aa9977;">Galleria Concorso d'Eleganza Invernale 2006 – 41 foto.<br><a href="#">[ CARICA FLASH GALLERY ]</a></p>
+      </div>
+      <div id="tab-officina" class="tab-panel">
+        <p style="color:#aa9977;">Foto dal garage: restauro Laverda 750 SFC in corso – aggiornamento settimanale.<br><a href="#">[ CARICA FLASH GALLERY ]</a></p>
+      </div>
+      <div id="tab-archivio" class="tab-panel">
+        <p style="color:#aa9977;">Archivio fotografico 1987–2005. Oltre 500 foto storiche del club.<br>⚠ Alcune foto sono state scansionate da diapositive e potrebbero avere qualità ridotta.<br><a href="#">[ CARICA FLASH GALLERY ]</a></p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ====== NEWS ====== -->
+  <div id="page-news" class="page-section">
+
+    <div class="welcome-box">
+      <div class="welcome-title">📰 News e Comunicati</div>
+      <div class="welcome-content"><p>Tutti gli aggiornamenti dal club e dal mondo delle moto d'epoca.</p></div>
+    </div>
+
+    <div class="section-title">📅 Marzo 2006</div>
+    <div class="news-item">
+      <div class="news-date">20/03/2006</div>
+      <div class="news-title">Gran Raduno Bresciano – iscrizioni aperte <span class="new-badge">NEW</span></div>
+      <div class="news-text">Confermata la location in Piazza della Loggia per il 14 aprile. Il programma prevede ritrovo alle 9:30, sfilata in centro, concorso d'eleganza con tre categorie (pre-1960, 1960-1975, post-1975), pranzo sociale e sorteggio premi. Quota iscrizione: €15 soci, €20 esterni.</div>
+    </div>
+    <div class="news-item">
+      <div class="news-date">10/03/2006</div>
+      <div class="news-title">Donazione Laverda 750 SFC – restauro al via</div>
+      <div class="news-text">Il socio Emilio Rota ha ufficialmente donato la sua Laverda 750 SFC 1973 al club per il progetto di restauro collettivo. La moto si trova attualmente in garage. Primo appuntamento sabato 18 marzo ore 9:00 per valutazione tecnica con Piero Cattaneo.</div>
+    </div>
+
+    <div class="section-title">📅 Febbraio 2006</div>
+    <div class="news-item">
+      <div class="news-date">28/02/2006</div>
+      <div class="news-title">🏆 Risultati Concorso d'Eleganza Invernale</div>
+      <div class="news-text">Con 23 moto in gara e oltre 150 spettatori, il concorso è stato un successo. La giuria presieduta da Ing. Morandi ha assegnato: 1° Roberto Fiori (MV Agusta 750 S America), 2° Carla Mori (Ducati 250 Desmo), 3° Franco Bettoni (Guzzi V7 Sport). Premio Restauro: Famiglia Zanetti per la Gilera 500 Saturno.</div>
+    </div>
+    <div class="news-item">
+      <div class="news-date">14/02/2006</div>
+      <div class="news-title">Nuovi soci benvenuti!</div>
+      <div class="news-text">Il club dà il benvenuto a 7 nuovi soci di Febbraio: Mario Grassi (Ducati 250 Desmo '69), Anna Pini (Vespa 150 GS '58)... e altri 5. Totale soci 2006: 183. Tessere disponibili in segreteria.</div>
+    </div>
+
+    <div class="section-title">📅 Gennaio 2006</div>
+    <div class="news-item">
+      <div class="news-date">08/01/2006</div>
+      <div class="news-title">🎉 Buon 2006 e programma dell'anno!</div>
+      <div class="news-text">Il Consiglio Direttivo augura a tutti i soci un felice 2006! Quest'anno organizzeremo 5 raduni, 2 concorsi d'eleganza e un'uscita sui laghi. Il calendario completo è disponibile nella sezione Raduni. Novità: inizia il restauro collettivo della Laverda!</div>
+    </div>
+
+  </div>
+
+  <!-- ====== CONTATTI ====== -->
+  <div id="page-contatti" class="page-section">
+
+    <div class="welcome-box">
+      <div class="welcome-title">✉ Contattaci</div>
+      <div class="welcome-content"><p>Compila il modulo o contattaci direttamente. Risponderemo entro 2-3 giorni lavorativi.</p></div>
+    </div>
+
+    <table width="100%" cellspacing="0"><tr>
+      <td valign="top" width="55%">
+        <div class="section-title">📝 Modulo Contatto</div>
+        <div class="contact-form">
+          <label>👤 Nome e Cognome *</label>
+          <input type="text" size="30" placeholder="Es: Mario Rossi">
+          <label>📧 E-Mail *</label>
+          <input type="text" size="30" placeholder="Es: mario@email.it">
+          <label>📞 Telefono</label>
+          <input type="text" size="20">
+          <label>🏍 La tua moto d'epoca (se hai)</label>
+          <input type="text" size="30" placeholder="Es: Ducati 250 Desmo 1969">
+          <label>📋 Oggetto</label>
+          <select size="1">
+            <option>-- Seleziona --</option>
+            <option>Richiesta iscrizione al club</option>
+            <option>Informazioni raduni</option>
+            <option>Certificazione ASI/FMI</option>
+            <option>Restauro e officina</option>
+            <option>Compravendita moto</option>
+            <option>Altro</option>
+          </select>
+          <label>💬 Messaggio *</label>
+          <textarea placeholder="Scrivi qui il tuo messaggio..."></textarea>
+          <br>
+          <input type="checkbox" id="priv"> <label for="priv" style="display:inline;font-size:10px;">Accetto il trattamento dei dati (D.Lgs. 196/2003)</label>
+          <br>
+          <button class="form-btn" onclick="alert('Messaggio inviato! Ti risponderemo presto. VROOM! 🏍')">📨 INVIA</button>
+        </div>
+      </td>
+      <td valign="top" width="5%"></td>
+      <td valign="top" width="40%">
+        <div class="section-title">📍 Dove Siamo</div>
+        <div style="background:#1f0d00;border:1px solid #664422;padding:10px;font-size:11px;line-height:2;color:#aa9977;margin-bottom:10px;">
+          <b style="color:#ffcc66">🏠 Sede Sociale</b><br>
+          Via Triumplina 88<br>
+          25136 Brescia (BS)<br>
+          <hr class="rust">
+          📞 <a href="#">030-9876543</a><br>
+          📧 <a href="#">segreteria@motoclubclassica.it</a><br>
+          🌐 <a href="#">www.motoclubclassica.it</a><br>
+          <hr class="rust">
+          <b style="color:#ffcc66">🔧 Garage / Officina</b><br>
+          <span style="font-size:10px;">Stessa sede – ingresso laterale<br>Aperto ogni Sabato 9:00-13:00</span>
+          <hr class="rust">
+          <b style="color:#ffcc66">📮 Casella Postale</b><br>
+          <span style="font-size:10px;">C.P. 142 – 25100 Brescia</span>
+        </div>
+        <div style="background:#0d0500;border:1px solid #442200;padding:8px;font-size:10px;color:#664422;text-align:center;">
+          🗺 <i>Clicca per aprire la mappa su MapQuest</i><br>
+          <a href="#">[ COME ARRIVARE → ]</a>
+        </div>
+        <div style="margin-top:10px;background:#1a0800;border:1px solid #5c2e00;padding:8px;font-size:11px;">
+          <b style="color:#ff9900;">🏍 VORRESTI ISCRIVERTI?</b><br>
+          <span style="color:#886644;font-size:10px;">Quota annuale solo <b style="color:#ff9900">€35</b>!<br>Vieni a trovarci il sabato mattina oppure scrivici.</span>
+        </div>
+      </td>
+    </tr></table>
+
+  </div>
+
+</td>
+
+<!-- RIGHT SIDEBAR -->
+<td id="sidebar-right">
+
+  <div class="online-now">
+    <div class="online-dot">●</div>
+    <div class="online-count">4</div>
+    <div class="online-label">soci online</div>
+  </div>
+
+  <div class="banner-ad">
+    <div style="font-size:22px;">🏍</div>
+    <div class="ad-title">ISCRIVITI!</div>
+    <div class="ad-text">Entra nel club</div>
+    <div class="ad-price">€ 35/anno</div>
+    <a href="#" class="ad-cta" onclick="showPage('chisiamo',null);return false;">INFO</a>
+  </div>
+
+  <div class="banner-ad">
+    <div style="font-size:22px;">📅</div>
+    <div class="ad-title">RADUNO</div>
+    <div class="ad-text">14 Aprile – Brescia</div>
+    <div style="color:#ff4444;font-size:9px;animation:blink 1s step-start infinite;">ULTIMI POSTI!</div>
+    <a href="#" class="ad-cta" onclick="showPage('raduni',null);return false;">ISCRIVITI</a>
+  </div>
+
+  <div class="banner-ad">
+    <div style="font-size:22px;">📜</div>
+    <div class="ad-title">CERT. ASI</div>
+    <div class="ad-text">Storicità moto<br>con il club</div>
+    <a href="#" class="ad-cta" onclick="showPage('contatti',null);return false;">INFO</a>
+  </div>
+
+  <div class="sbox">
+    <div class="sbox-title">📊 La tua moto</div>
+    <div class="sbox-content">
+      <div style="font-size:10px;color:#aa9977;margin-bottom:5px;">Che tipo di moto hai?</div>
+      <div style="font-size:10px;color:#886644;">
+        <input type="radio" name="poll2"> Guzzi<br>
+        <input type="radio" name="poll2"> Ducati<br>
+        <input type="radio" name="poll2"> MV Agusta<br>
+        <input type="radio" name="poll2"> Altra marca<br>
+        <br>
+        <a href="#" onclick="alert('Voto registrato! Grazie!');return false;" style="background:#5c2e00;color:#ffdd88;padding:2px 8px;font-size:9px;font-weight:bold;text-decoration:none;border:1px outset #aa6622;">VOTA</a>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align:center;margin:6px 0;font-size:18px;">
+    <span style="animation:flicker 0.5s infinite;display:inline-block;">🔥</span>
+    🏍
+    <span style="animation:flicker 0.5s 0.2s infinite;display:inline-block;">🔥</span>
+  </div>
+
+  <div style="text-align:center;font-size:9px;color:#4a2e00;line-height:1.7;margin-top:4px;">
+    Affiliato<br>
+    <span style="color:#7a4e00;">FMI<br>ASI</span><br>
+    dal 1993
+  </div>
+
+</td>
+
+</tr></table>
+
+<!-- FOOTER -->
+<div id="footer">
+  <div style="font-size:20px;margin-bottom:6px;">🏍 ⚙ 🔥 🏆 📷 🔧</div>
+  <b style="color:#886644;">Moto Club Classica Italiana A.S.D.</b> – Via Triumplina 88, 25136 Brescia | C.F. 98012340171<br>
+  Tel: 030-9876543 | Email: <a href="#">segreteria@motoclubclassica.it</a><br>
+  <hr class="rust" style="width:600px;margin:8px auto;">
+  <a href="#">Privacy</a> | <a href="#">Note Legali</a> | <a href="#">Mappa Sito</a> | <a href="#">Area Soci</a> | <a href="#">Libro Ospiti</a><br>
+  <div class="best-viewed">
+    🖥 Ottimizzato per Internet Explorer 6.0 – Risoluzione 800x600 – Adobe Flash Player richiesto per la galleria<br>
+    © 1987-2006 Moto Club Classica Italiana – Tutti i diritti riservati
+  </div>
+  <div style="margin-top:8px;font-size:10px;color:#4a2e00;">
+    Visitatori: <span class="hit-counter">031247</span> &nbsp;|&nbsp;
+    Online: <span style="color:#ff9900;font-family:Courier New;">4</span> &nbsp;|&nbsp;
+    Ultimo aggiornamento: <span style="color:#664422;">20/03/2006</span>
+  </div>
+</div>
+
+<script>
+  function showPage(id, navEl) {
+    document.querySelectorAll('.page-section').forEach(s => s.classList.remove('active'));
+    document.getElementById('page-' + id).classList.add('active');
+    document.querySelectorAll('#navbar a').forEach(a => a.classList.remove('active'));
+    if (navEl) navEl.classList.add('active');
+  }
+  function showTab(id, el) {
+    document.querySelectorAll('.tab-panel').forEach(p => { p.style.display='none'; p.classList.remove('tab-active'); });
+    const panel = document.getElementById('tab-' + id);
+    panel.style.display = 'block'; panel.classList.add('tab-active');
+    document.querySelectorAll('.tab-nav a').forEach(a => a.classList.remove('tab-active'));
+    el.classList.add('tab-active');
+  }
+  function showTab2(id, el) { showTab(id, el); }
+</script>
+</body>
+</html>

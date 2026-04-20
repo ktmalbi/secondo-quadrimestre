@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Moto Club Classica Italiana - Associazione Moto d'Epoca">
+  <title>Moto Club Classica Italiana</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes pulse-soft { 0%, 100% { opacity: 1; } 50% { opacity: 0.6; } }
+    .pulse-soft { animation: pulse-soft 2s infinite; }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+<nav class="sticky top-0 bg-black text-white shadow-lg z-50">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">🏍 MOTO CLUB</h1>
+    <div class="hidden md:flex gap-6 text-sm">
+      <button onclick="showPage('home')" class="hover:text-amber-400">Home</button>
+      <button onclick="showPage('chisiamo')" class="hover:text-amber-400">Chi Siamo</button>
+      <button onclick="showPage('moto')" class="hover:text-amber-400">Moto</button>
+      <button onclick="showPage('raduni')" class="hover:text-amber-400">Raduni</button>
+      <button onclick="showPage('contatti')" class="hover:text-amber-400">Contatti</button>
+    </div>
+  </div>
+</nav>
+
+<div class="max-w-6xl mx-auto px-4 py-8">
+
+  <div id="page-home" class="page-section">
+    <div class="bg-gradient-to-r from-slate-100 to-slate-50 p-8 rounded-lg mb-8">
+      <h2 class="text-4xl font-bold mb-4 text-black">Moto Club Classica Italiana</h2>
+      <p class="text-gray-700 mb-4">Associazione Moto d'Epoca dal 1987</p>
+      <p class="text-gray-600 mb-3">Il <strong>Moto Club Classica Italiana</strong> è un'associazione no-profit con sede a Brescia, fondata nel <strong>1987</strong> da un gruppo di appassionati con un'unica passione: le <strong>moto d'epoca italiane</strong>. In quasi vent'anni di attività siamo cresciuti fino a contare oltre <strong>180 soci</strong> da tutta la Lombardia.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6 mb-8">
+      <div class="bg-slate-50 p-6 rounded-lg border-l-4 border-amber-500">
+        <h3 class="text-xl font-bold mb-2">🔧 Officina</h3>
+        <p class="text-sm text-gray-600">Accesso al garage attrezzato ogni sabato mattina con meccanici esperti.</p>
+      </div>
+      <div class="bg-slate-50 p-6 rounded-lg border-l-4 border-amber-500">
+        <h3 class="text-xl font-bold mb-2">📜 Certificazioni</h3>
+        <p class="text-sm text-gray-600">Assistenza completa per certificato di storicità e targa ASI.</p>
+      </div>
+      <div class="bg-slate-50 p-6 rounded-lg border-l-4 border-amber-500">
+        <h3 class="text-xl font-bold mb-2">🤝 Comunità</h3>
+        <p class="text-sm text-gray-600">Entra in una rete di 180 appassionati: scambia consigli e ricambi.</p>
+      </div>
+    </div>
+
+    <div class="bg-amber-50 border border-amber-200 p-6 rounded-lg mb-8">
+      <h3 class="font-bold mb-3 text-amber-900">📍 Prossimo Raduno</h3>
+      <p class="text-amber-800"><strong>14 Aprile 2006</strong> - Gran Raduno Bresciano</p>
+      <p class="text-sm text-amber-700 mt-2">Piazza della Loggia • Brescia</p>
+    </div>
+
+    <div class="space-y-4">
+      <h3 class="text-2xl font-bold mb-4">Ultime News</h3>
+      <div class="border-l-4 border-amber-500 pl-4 py-3">
+        <p class="font-bold text-sm text-amber-600">20 Marzo 2006</p>
+        <p class="font-semibold">Gran Raduno Bresciano – Iscrizioni aperte!</p>
+        <p class="text-gray-600 text-sm mt-2">Il 14 aprile torniamo in Piazza della Loggia per il nostro raduno primaverile. Attesi oltre 200 partecipanti. Ultimi posti disponibili!</p>
+      </div>
+      <div class="border-l-4 border-gray-300 pl-4 py-3">
+        <p class="font-bold text-sm text-gray-500">10 Marzo 2006</p>
+        <p class="font-semibold">Arrivata in garage: Laverda 750 SFC 1973</p>
+        <p class="text-gray-600 text-sm mt-2">Il socio Emilio Rota ha donato al club la sua splendida Laverda 750 SFC per il progetto di restauro collettivo.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="page-chisiamo" class="page-section hidden">
+    <h2 class="text-4xl font-bold mb-6">Chi Siamo</h2>
+    <div class="bg-slate-100 p-8 rounded-lg mb-8">
+      <p class="mb-4 text-gray-700">Tutto cominciò nel <strong>1987</strong> quando sette amici bresciani si ritrovarono nel garage di <strong>Luigi Castelletti</strong> attorno a una Moto Guzzi Falcone del 1955. Da quella serata nacque il <strong>Moto Club Classica Italiana</strong>.</p>
+      <p class="mb-4 text-gray-700">Negli anni Novanta il club crebbe rapidamente. Nel <strong>1993</strong> ottenemmo l'affiliazione alla FMI e nel <strong>1996</strong> all'ASI. Nel <strong>2001</strong> abbiamo inaugurato la nostra sede fissa con garage attrezzato in Via Triumplina 88, Brescia.</p>
+      <p class="text-gray-700">Oggi contiamo <strong>183 soci attivi</strong>, organizziamo mediamente <strong>8 eventi l'anno</strong> e gestiamo una collezione condivisa di oltre <strong>25 moto d'epoca</strong>.</p>
+    </div>
+
+    <h3 class="text-2xl font-bold mb-4">Consiglio Direttivo</h3>
+    <div class="grid md:grid-cols-5 gap-4">
+      <div class="bg-slate-50 p-4 rounded text-center">
+        <div class="text-4xl mb-2">👨</div>
+        <p class="font-bold text-sm">Luigi Castelletti</p>
+        <p class="text-xs text-gray-600">Presidente</p>
+        <p class="text-xs text-gray-500 mt-2">Guzzi Falcone '55</p>
+      </div>
+      <div class="bg-slate-50 p-4 rounded text-center">
+        <div class="text-4xl mb-2">👩</div>
+        <p class="font-bold text-sm">Rosanna Ferri</p>
+        <p class="text-xs text-gray-600">Vice Presidente</p>
+        <p class="text-xs text-gray-500 mt-2">Ducati 350 GT '68</p>
+      </div>
+      <div class="bg-slate-50 p-4 rounded text-center">
+        <div class="text-4xl mb-2">🧔</div>
+        <p class="font-bold text-sm">Emilio Rota</p>
+        <p class="text-xs text-gray-600">Tesoriere</p>
+        <p class="text-xs text-gray-500 mt-2">Laverda 750 SFC '73</p>
+      </div>
+      <div class="bg-slate-50 p-4 rounded text-center">
+        <div class="text-4xl mb-2">👨‍🔧</div>
+        <p class="font-bold text-sm">Piero Cattaneo</p>
+        <p class="text-xs text-gray-600">Officina</p>
+        <p class="text-xs text-gray-500 mt-2">MV Agusta 350 '72</p>
+      </div>
+      <div class="bg-slate-50 p-4 rounded text-center">
+        <div class="text-4xl mb-2">👩‍💻</div>
+        <p class="font-bold text-sm">Cristina Volpi</p>
+        <p class="text-xs text-gray-600">Segreteria</p>
+        <p class="text-xs text-gray-500 mt-2">Gilera 150 Sport '64</p>
+      </div>
+    </div>
+
+    <div class="mt-8">
+      <h3 class="text-2xl font-bold mb-4">Quote 2006</h3>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead class="bg-slate-200">
+            <tr>
+              <th class="px-4 py-2 text-left">Tipo</th>
+              <th class="px-4 py-2 text-left">Quota</th>
+              <th class="px-4 py-2 text-left">Include</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y">
+            <tr class="bg-white hover:bg-slate-50">
+              <td class="px-4 py-3 font-semibold">Socio Ordinario</td>
+              <td class="px-4 py-3 font-bold text-amber-600">€ 35</td>
+              <td class="px-4 py-3 text-gray-600">Tessera FMI, accesso raduni, garage</td>
+            </tr>
+            <tr class="bg-slate-50 hover:bg-slate-100">
+              <td class="px-4 py-3 font-semibold">Socio Familiare</td>
+              <td class="px-4 py-3 font-bold text-amber-600">€ 20</td>
+              <td class="px-4 py-3 text-gray-600">Familiare convivente, tessera + eventi</td>
+            </tr>
+            <tr class="bg-white hover:bg-slate-50">
+              <td class="px-4 py-3 font-semibold">Socio Sostenitore</td>
+              <td class="px-4 py-3 font-bold text-amber-600">€ 80</td>
+              <td class="px-4 py-3 text-gray-600">Tutto + logo sito + priorità eventi</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div id="page-moto" class="page-section hidden">
+    <h2 class="text-4xl font-bold mb-6">Le Nostre Moto</h2>
+    <p class="text-gray-600 mb-8">Il club gestisce una collezione condivisa di moto d'epoca italiane</p>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-slate-50 rounded-lg p-6 hover:shadow-lg transition">
+        <div class="text-5xl mb-3">🏍</div>
+        <h4 class="font-bold text-lg mb-1">Moto Guzzi Falcone</h4>
+        <p class="text-sm text-gray-500 mb-2">1955 • 500cc</p>
+        <p class="text-sm text-gray-600">La moto fondatrice del club. Restaurata da zero nel 1987. Condizioni: eccellenti.</p>
+        <p class="text-xs text-amber-600 mt-3">⭐ Gioiello del Club</p>
+      </div>
+
+      <div class="bg-slate-50 rounded-lg p-6 hover:shadow-lg transition">
+        <div class="text-5xl mb-3">🏍</div>
+        <h4 class="font-bold text-lg mb-1">MV Agusta 750 S</h4>
+        <p class="text-sm text-gray-500 mb-2">1975 • 750cc</p>
+        <p class="text-sm text-gray-600">4 cilindri in linea. Una delle moto più belle mai prodotte. Vincitrice concorso 2006.</p>
+        <p class="text-xs text-amber-600 mt-3">⭐ Pezzo da Museo</p>
+      </div>
+
+      <div class="bg-slate-50 rounded-lg p-6 hover:shadow-lg transition">
+        <div class="text-5xl mb-3">🏍</div>
+        <h4 class="font-bold text-lg mb-1">Ducati 250 Desmo</h4>
+        <p class="text-sm text-gray-500 mb-2">1969 • 250cc</p>
+        <p class="text-sm text-gray-600">Il mitico distribuzione desmodromica Ducati. Restauro completato nel 2004.</p>
+        <p class="text-xs text-amber-600 mt-3">⭐ Ottimo Stato</p>
+      </div>
+
+      <div class="bg-slate-50 rounded-lg p-6 hover:shadow-lg transition">
+        <div class="text-5xl mb-3">🏍</div>
+        <h4 class="font-bold text-lg mb-1">Laverda 750 SFC</h4>
+        <p class="text-sm text-gray-500 mb-2">1973 • 750cc</p>
+        <p class="text-sm text-gray-600">Moto da corsa stradale degli anni '70. Donata da Emilio Rota nel 2006.</p>
+        <p class="text-xs text-red-600 mt-3 animate-pulse">🔧 IN RESTAURO</p>
+      </div>
+
+      <div class="bg-slate-50 rounded-lg p-6 hover:shadow-lg transition">
+        <div class="text-5xl mb-3">🏍</div>
+        <h4 class="font-bold text-lg mb-1">Gilera 150 Sport</h4>
+        <p class="text-sm text-gray-500 mb-2">1964 • 150cc</p>
+        <p class="text-sm text-gray-600">Una delle ultime Gilera prima dell'acquisizione Piaggio. Condizioni: buone.</p>
+        <p class="text-xs text-amber-600 mt-3">⭐ Buono Stato</p>
+      </div>
+
+      <div class="bg-slate-50 rounded-lg p-6 hover:shadow-lg transition">
+        <div class="text-5xl mb-3">🏍</div>
+        <h4 class="font-bold text-lg mb-1">Morini 3½ Sport</h4>
+        <p class="text-sm text-gray-500 mb-2">1976 • 344cc</p>
+        <p class="text-sm text-gray-600">V-twin bolognese a 72°. Considerato uno dei motori più belli. CERCASI ricambi.</p>
+        <p class="text-xs text-gray-500 mt-3">⭐ In lavorazione</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="page-raduni" class="page-section hidden">
+    <h2 class="text-4xl font-bold mb-6">Raduni e Eventi 2006</h2>
+    <p class="text-gray-600 mb-8">Tutti gli eventi sono aperti ai soci e agli appassionati</p>
+
+    <div class="space-y-3">
+      <div class="bg-white border-l-4 border-red-500 p-4 rounded">
+        <div class="flex justify-between items-start">
+          <div>
+            <p class="font-bold">14 Aprile - Gran Raduno Bresciano</p>
+            <p class="text-sm text-gray-600">Piazza della Loggia, Brescia</p>
+            <p class="text-xs text-gray-500 mt-1">Pranzo sociale incluso, concorso eleganza, mercatino ricambi</p>
+          </div>
+          <span class="bg-red-500 text-white px-3 py-1 text-xs font-bold rounded">APERTA</span>
+        </div>
+      </div>
+
+      <div class="bg-white border-l-4 border-amber-500 p-4 rounded">
+        <div class="flex justify-between items-start">
+          <div>
+            <p class="font-bold">28 Maggio - Gita sui Laghi</p>
+            <p class="text-sm text-gray-600">Lago di Garda - Gargnano</p>
+            <p class="text-xs text-gray-500 mt-1">Gita sociale, percorso 180km, sosta pranzo</p>
+          </div>
+          <span class="bg-amber-500 text-white px-3 py-1 text-xs font-bold rounded">PRESTO</span>
+        </div>
+      </div>
+
+      <div class="bg-white border-l-4 border-blue-500 p-4 rounded">
+        <div class="flex justify-between items-start">
+          <div>
+            <p class="font-bold">10 Giugno - Concorso d'Eleganza</p>
+            <p class="text-sm text-gray-600">Villa Fenaroli, Rezzato (BS)</p>
+            <p class="text-xs text-gray-500 mt-1">Concorso con premiazione, musica live</p>
+          </div>
+          <span class="bg-blue-500 text-white px-3 py-1 text-xs font-bold rounded">PRESTO</span>
+        </div>
+      </div>
+
+      <div class="bg-white border-l-4 border-gray-400 p-4 rounded">
+        <div class="flex justify-between items-start">
+          <div>
+            <p class="font-bold">Ogni Sabato - Officina Aperta</p>
+            <p class="text-sm text-gray-600">Sede club, Via Triumplina 88</p>
+            <p class="text-xs text-gray-500 mt-1">Restauro collettivo, assistenza soci</p>
+          </div>
+          <span class="bg-green-500 text-white px-3 py-1 text-xs font-bold rounded">LIBERO</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-8 bg-blue-50 border border-blue-200 p-6 rounded-lg">
+      <p class="text-sm text-blue-900"><strong>Come iscriversi:</strong> inviare una email a <span class="font-mono">eventi@motoclubclassica.it</span> con nome, cognome, numero tessera e moto. La conferma arriverà entro 3 giorni.</p>
+    </div>
+  </div>
+
+  <div id="page-contatti" class="page-section hidden">
+    <h2 class="text-4xl font-bold mb-6">Contattaci</h2>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <h3 class="text-xl font-bold mb-4">Modulo Contatto</h3>
+        <form class="space-y-4">
+          <div>
+            <label class="block text-sm font-semibold mb-2">Nome e Cognome *</label>
+            <input type="text" placeholder="Mario Rossi" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-amber-500">
+          </div>
+          <div>
+            <label class="block text-sm font-semibold mb-2">Email *</label>
+            <input type="email" placeholder="mario@email.it" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-amber-500">
+          </div>
+          <div>
+            <label class="block text-sm font-semibold mb-2">La tua moto d'epoca</label>
+            <input type="text" placeholder="Ducati 250 Desmo 1969" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-amber-500">
+          </div>
+          <div>
+            <label class="block text-sm font-semibold mb-2">Messaggio *</label>
+            <textarea placeholder="Scrivi il tuo messaggio..." class="w-full px-3 py-2 border border-gray-300 rounded-lg h-32 focus:outline-none focus:border-amber-500"></textarea>
+          </div>
+          <button type="button" onclick="alert('Messaggio inviato! VROOM! 🏍')" class="bg-black text-white px-6 py-2 rounded-lg font-semibold hover:bg-gray-800 w-full">Invia</button>
+        </form>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-4">Informazioni</h3>
+        <div class="bg-slate-100 p-6 rounded-lg space-y-4">
+          <div>
+            <p class="font-bold text-amber-600">🏠 Sede Sociale</p>
+            <p class="text-sm text-gray-700 mt-1">Via Triumplina 88</p>
+            <p class="text-sm text-gray-700">25136 Brescia (BS)</p>
+          </div>
+          <hr>
+          <div>
+            <p class="font-bold">📞 Telefono</p>
+            <p class="text-sm text-gray-700 mt-1">030-9876543</p>
+          </div>
+          <div>
+            <p class="font-bold">📧 Email</p>
+            <p class="text-sm text-gray-700 mt-1">segreteria@motoclubclassica.it</p>
+          </div>
+          <hr>
+          <div>
+            <p class="font-bold text-amber-600">🔧 Garage / Officina</p>
+            <p class="text-sm text-gray-700 mt-1">Ingresso laterale - Aperto ogni Sabato 9:00-13:00</p>
+          </div>
+        </div>
+
+        <div class="mt-6 bg-amber-100 border-2 border-amber-400 p-4 rounded-lg">
+          <p class="font-bold text-amber-900">🏍 Vuoi iscriverti?</p>
+          <p class="text-sm text-amber-800 mt-2">Quota annuale solo <strong>€35</strong>!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer class="bg-black text-white mt-12">
+  <div class="max-w-6xl mx-auto px-4 py-8 text-center text-sm">
+    <p class="mb-2">🏍 ⚙ 🔥 🏆 📷 🔧</p>
+    <p class="text-gray-400">Moto Club Classica Italiana A.S.D. • Via Triumplina 88, 25136 Brescia</p>
+    <p class="text-gray-500 mt-2">© 1987-2006 Moto Club Classica Italiana</p>
+  </div>
+</footer>
+
+<script>
+  function showPage(id) {
+    document.querySelectorAll('.page-section').forEach(el => el.classList.add('hidden'));
+    document.getElementById('page-' + id).classList.remove('hidden');
+  }
+</script>
+
+</body>
+</html>
